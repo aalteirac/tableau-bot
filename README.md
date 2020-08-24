@@ -3,7 +3,7 @@ A very basic chat demoing Tableau static view integration as well as live view e
 
 Quick Intro :
 
-[![ScreenShot](https://raw.githubusercontent.com/aalteirac/tabot/master/thumb.png)](https://youtu.be/ZwLbbvJ1x1o)
+[![ScreenShot](https://raw.githubusercontent.com/aalteirac/tableau-bot/master/thumb.png)](https://youtu.be/ZwLbbvJ1x1o)
 
 
 HOW TO RUN WITH YOUR OWN TABLEAU SERVER
