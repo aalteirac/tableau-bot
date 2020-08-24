@@ -86,7 +86,7 @@ module.exports = function(app,io){
 			});
 				socket.emit('peopleinchat', {number: 0,tags:min, prefix:prefix});
 			} catch (error) {
-				//do something smart...
+				console.log(error)
 			}
 			
 		});
@@ -160,7 +160,8 @@ function findClientsSocket(io,roomId, namespace) {
 	if (ns) {
 		for (var id in ns.connected) {
 			if(roomId) {
-				var index = ns.connected[id].rooms.indexOf(roomId) ;
+				var rooms=Object.values(ns.connected[id].rooms)
+				var index = rooms.indexOf(roomId) ;
 				if(index !== -1) {
 					res.push(ns.connected[id]);
 				}
