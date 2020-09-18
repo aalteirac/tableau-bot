@@ -83,7 +83,7 @@ module.exports = function(app,io){
 				var calc=views.views.view;
 				const min = calc.map((element) => {
 				return element.name;
-			});
+				});
 				socket.emit('peopleinchat', {number: 0,tags:min, prefix:prefix});
 			} catch (error) {
 				console.log(error)

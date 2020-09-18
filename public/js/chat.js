@@ -48,6 +48,8 @@ $(function(){
 		socket.emit('load', id);
 	});
 	socket.on('disconnect', function(){
+		if(isMobile)
+			location.reload();
 		showMessage("personinchat");
 	});
 
